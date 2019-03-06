@@ -13,4 +13,3 @@ def displayWord(secretWord, lettersGuessed):
             word.append("_")
         return((" ".join(word)))
 def hangman(secretWord):
-
