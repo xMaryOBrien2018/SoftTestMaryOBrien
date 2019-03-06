@@ -1,0 +1,15 @@
+import random
+mistakes = 8
+ranwordGenerator = random.choice[("apple", "orange", "football", "hockey", "radio", "microwave", "stove", "base", "run", "jump")]
+lettersGuessed = []
+availableLetters = list("abcdefghijclmnopqrstuvwxyz")
+def displayWord(secretWord, lettersGuessed):
+    word = []
+    for i in secretWord:
+        if i in secretWord:
+            if i in lettersGuessed:
+                word.append(i)
+        else:
+            word.append("_")
+        return((" ".join(word)))
+def hangman(secretWord):
